@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="click.css">
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .box{
+        height: 50px;
+        width: 200px;
+        border: 1px solid;
+        cursor: pointer;
+        
+    }
+</style>
+<body>
+    <!-- <div id="wrapper"> -->
+    <div class="box">red</div>
+    <div class="box">green</div>
+    <div class="box">blue</div>
+    <div class="box">yellow</div>
+<!-- </div> -->
+<script>
+     let box = document.querySelectorAll(".box")
+     let b = document.querySelector("body")
+
+        // function change() {
+        // //   a.style.backgroundColor = "blue"
+
+        // }
+        for(let i=0;i<box.length;i++)
+        {
+            box[i].onclick =()=>{
+                b.style.backgroundColor = box[i].innerHTML
+                 
+            }        }
+</script>
+</body>
+</html>
